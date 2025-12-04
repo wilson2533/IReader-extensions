@@ -1,4 +1,4 @@
-package ireader.fanmtl
+pageageackage ireader.fanmtl
 
 import io.ktor.client.call.body
 import io.ktor.client.request.forms.submitForm
@@ -49,7 +49,7 @@ abstract class Fanmtl(private val deps: Dependencies) : SourceFactory(
         get() = listOf(
             BaseExploreFetcher(
                 "Trending",
-                endpoint = "/list/all/all-newstime-{page}.html",
+                endpoint = "/list/all/all-newstime-{page-1}.html",
                 selector = ".novel-item",
                 nameSelector = "a",
                 nameAtt = "title",
@@ -62,7 +62,7 @@ abstract class Fanmtl(private val deps: Dependencies) : SourceFactory(
                addBaseurlToCoverLink = true
             ),BaseExploreFetcher(
                 "Trending",
-                endpoint = "/list/all/all-onclick-{page}.html",
+                endpoint = "/list/all/all-onclick-{page-1}.html",
                 selector = ".novel-item",
                 nameSelector = "a",
                 nameAtt = "title",
