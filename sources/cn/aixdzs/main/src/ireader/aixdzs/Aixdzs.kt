@@ -1,4 +1,4 @@
-package ireader.aixdzs
+package ireader.aixdz
 
 import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.get
